@@ -1,0 +1,32 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+.styled-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.styled-button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+.styled-button:active {
+    background-color: #3e8e41;
+    transform: scale(1);
+}
+
+form {
+    margin: 0;
+}

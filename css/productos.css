@@ -1,0 +1,108 @@
+/* productos.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Cambiar a flexbox */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan */
+    justify-content: center; /* Centra los productos horizontalmente */
+}
+
+li {
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 15px;
+    width: 200px; /* Ancho de cada producto */
+    text-align: center; /* Centra el texto */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s; /* Efecto de transición */
+}
+
+li:hover {
+    transform: scale(1.05); /* Efecto de aumento al pasar el mouse */
+}
+
+form {
+    margin-top: 10px; /* Espacio entre la descripción y el botón */
+}
+ul {
+    list-style-type: none; /* Eliminar los puntos de la lista */
+    padding: 0; /* Eliminar padding */
+    display: flex; /* Usar flexbox */
+    flex-wrap: wrap; /* Permitir que los elementos se envuelvan */
+}
+
+li {
+    border: 1px solid #ddd; /* Agregar borde a los elementos */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 15px; /* Espaciado interno */
+    margin: 10px; /* Espaciado entre elementos */
+    width: 200px; /* Ancho fijo para cada producto */
+    text-align: center; /* Centramos el texto */
+}
+
+img {
+    margin-bottom: 10px; /* Espaciado debajo de la imagen */
+    border-radius: 5px; /* Bordes redondeados para la imagen */
+}
+/* productos.css */
+
+/* Estilos para el contenedor de productos */
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos para el modal */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+    padding-top: 60px; 
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+}

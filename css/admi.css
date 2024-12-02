@@ -1,0 +1,57 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Estilos para los botones */
+.button-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.button {
+    display: inline-block;
+    padding: 15px 25px;
+    margin: 10px;
+    font-size: 16px;
+    color: white;
+    background-color: #28a745; /* Color verde */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.button:hover {
+    background-color: #218838; /* Verde más oscuro */
+    transform: scale(1.05); /* Aumenta el tamaño del botón al pasar el ratón */
+}
+
+/* Estilos para el enlace de cerrar sesión */
+.button:last-child {
+    background-color: #dc3545; /* Color rojo para cerrar sesión */
+}
+
+.button:last-child:hover {
+    background-color: #c82333; /* Rojo más oscuro al pasar el ratón */
+}

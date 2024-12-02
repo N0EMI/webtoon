@@ -1,0 +1,77 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9; /* Color de fondo suave */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    
+    width: 80%;
+    max-width: 800px; /* Ancho máximo para el contenedor */
+    margin: 50px; /* Centrar el contenedor en la página */
+    background-color: #ffffff; /* Color de fondo del cuadro */
+    border: 2px solid red; /* Cambiar el borde a rojo */
+    border-radius: 8px; /* Esquinas redondeadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+    padding: 20px; /* Espaciado interno */
+    margin: 20px 0; 
+}
+
+.header {
+    text-align: center; /* Centrar texto del encabezado */
+    margin-bottom: 20px; /* Margen inferior */
+}
+
+h1 {
+    margin: 0; /* Eliminar margen */
+    color: #333; /* Color del texto */
+}
+
+h2 {
+    color: #2c3e50; /* Color del título de la factura */
+}
+
+h3 {
+    color: #34495e; /* Color de los subtítulos */
+}
+
+.table-container {
+    margin: 20px 0; /* Espaciado vertical */
+}
+
+table {
+    width: 100%; /* Ancho completo */
+    border-collapse: collapse; /* Colapsar bordes de la tabla */
+}
+
+th, td {
+    border: 1px solid #ccc; /* Borde de las celdas */
+    padding: 8px; /* Espaciado interno de las celdas */
+    text-align: left; /* Alinear texto a la izquierda */
+}
+
+th {
+    background-color: #f2f2f2; /* Color de fondo para encabezados de tabla */
+}
+
+footer {
+    text-align: center; /* Centrar texto del pie de página */
+    margin-top: 20px; /* Margen superior */
+}
+
+/* Estilo del botón */
+button {
+    padding: 10px 15px; /* Espaciado interno del botón */
+    background-color: #3498db; /* Color de fondo del botón */
+    color: #ffffff; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Esquinas redondeadas */
+    cursor: pointer; /* Cambiar cursor a puntero */
+    transition: background-color 0.3s; /* Transición para el efecto hover */
+}
+
+button:hover {
+    background-color: #2980b9; /* Color de fondo al pasar el mouse */
+}

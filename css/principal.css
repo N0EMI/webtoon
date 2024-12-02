@@ -1,0 +1,323 @@
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* Top banner */
+        .top-banner {
+            background-color: #40aba8;
+            color: white;
+            text-align: center;
+            padding: 0.5rem;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        } 
+        .alert {
+            padding: 20px;
+            background-color: #4CAF50;
+            color: white;
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            border-radius: 5px;
+            display: none;
+            z-index: 1000;
+        }
+        .top-banner a {
+            color: #fff;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        
+        /* Header navigation */
+        .header-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            background-color: #fff;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        
+        .header-nav .logo {
+            max-width: 15%; /* Ajustado para ser más flexible */
+        }
+        
+        .header-nav input[type="text"] {
+            padding: 0.5rem;
+            width: 55%; /* Cambiado a % */
+            border: 1px solid #ccc;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 1rem;
+            border-radius: 5px;
+        }
+        
+        .header-nav button {
+            padding: 0.5rem 1rem;
+            background-color: #40aba8; /* Color de fondo inicial */
+            color: white;
+            border: none;
+            cursor: pointer; /* Cambiado a 'pointer' */
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 1rem;
+            border-radius: 5px;
+        }
+        
+        /* Cambiar el color de fondo al pasar el cursor */
+        .header-nav button:hover {
+            background-color: #0cc0df; /* Elige el color que prefieras */
+        }
+        
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 1rem;
+            padding: 1rem;
+            justify-content: flex-end;
+        }
+        
+        .nav-links li a {
+            text-decoration: none;
+            color: black;
+        }
+        
+        /* Promo banner */
+        .promo-banner {
+            display: flex;
+            justify-content: space-around;
+            padding: 1rem;
+            background-color: #f9f9f9;
+        }
+        
+        .promo-banner img {
+            max-width: 50%;
+            height: 20%;
+        }
+        
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 0.5rem;
+            background-color: #40aba8;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        
+        /* Carousel */
+        .promo-banner {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            overflow: hidden; /* Ocultar el contenido fuera del carrusel */
+            position: relative;
+        }
+        
+        .carousel {
+            width: 100%;
+            position: relative;
+            overflow: hidden; /* Asegura que solo se vea una imagen a la vez */
+        }
+        
+        .slides {
+            display: flex; /* Alinea las imágenes horizontalmente */
+            transition: transform 0.5s ease-in-out;
+            width: 200%; /* Ajusta según la cantidad de imágenes */
+        }
+        
+        .slides img {
+            width: 100%; /* Cada imagen ocupa el 100% del ancho del carrusel */
+            height: auto; /* Se adapta al tamaño */
+            flex-shrink: 0; /* Evita que las imágenes se reduzcan de tamaño */
+        }
+        
+        /* Modal */
+        .modal {
+            display: none; /* Oculto por defecto */
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro transparente */
+            justify-content: center;
+            align-items: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        
+        h3 {
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            padding: 15px;
+        }
+        
+        .modal-content {
+            background-color: white;
+            padding: 1rem;
+            border-radius: 20px;
+            width: 90%;
+            max-width: 400px;
+        }
+        
+        .close {
+            float: right;
+            font-size: 24px;
+            cursor: pointer;
+        }
+        
+        /* Formulario dentro del modal */
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        form label,
+        form input {
+            margin-bottom: 8px;
+            padding: 8px;
+            border-radius: 5px;
+        }
+        
+        form input[type="submit"] {
+            background-color: #40aba8;
+            color: white;
+            border: none;
+            padding: 12px;
+            margin-top: 8px;
+            cursor: pointer;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: medium;
+        }
+        
+        form input[type="submit"]:hover {
+            background-color: #0cc0df;
+            color:black;
+        }
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .header-nav {
+                flex-direction: column;
+                text-align: center;
+            }
+        
+            .header-nav .logo {
+                max-width: 50%;
+            }
+        
+            .header-nav input[type="text"] {
+                width: 80%; /* Se adapta mejor en pantallas pequeñas */
+            }
+        
+            .nav-links {
+                justify-content: center;
+                gap: 0.5rem;
+                padding: 1rem;
+            }
+        
+            .promo-banner {
+                flex-direction: column;
+            }
+        
+            .promo-banner img {
+                margin-bottom: 1rem;
+            }
+            
+            .navbar ul {
+                flex-direction: column;
+                align-items: center;
+            }
+        
+            .carousel img {
+                height: auto; /* Ajuste de la altura para pantallas más pequeñas */
+            }
+        
+            .slides {
+                width: 100%; /* Ajuste para manejar una sola imagen visible */
+            }
+        
+            form input[type="submit"] {
+                padding: 10px;
+            }
+        }
+        /* BARRA DE CATEGORÍAS */
+        .scrolling-bar {
+            background-color: #fff;
+            border-top: 2px solid #ccc;
+            border-bottom: 2px solid #ccc;
+            padding: 5px 0;
+            overflow: hidden; /* Oculta el contenido que sale del contenedor */
+        }
+        
+        .category-list {
+            display: flex;
+            gap: 1rem; /* Espaciado */
+            animation: scroll 20s linear infinite; /* Aplica la animación */
+            white-space: nowrap; /* Impide que las líneas se rompan */
+            list-style: none; /* Elimina los puntos de la lista */
+            padding: 0; /* Elimina el padding del ul */
+            margin: 0; /* Elimina el margen del ul */
+        }
+        
+        .category-list li {
+            padding: 10px; /* Espaciado interno para cada ítem */
+        }
+        
+        .category-list li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            padding: 10px 15px;
+            display: inline-block; /* Asegura que el padding funcione correctamente */
+            font-size: large;
+        }
+        
+        .category-list li a:hover {
+            background-color: #40aba8;
+            color: #fff;
+        }
+        
+        @keyframes scroll {
+            0% {
+                transform: translateX(100%); /* Comienza fuera del contenedor */
+            }
+            100% {
+                transform: translateX(-100%); /* Se mueve completamente hacia la izquierda */
+            }
+        }
+        
+        .category-list:hover {
+            animation-play-state: paused; /* Pausa el movimiento al pasar el ratón */
+        }
+
+        /*ALERTA PARA REGISTRO DE CLIENTE */
+        .alert {
+            padding: 10px;
+            background-color: #f44336;
+            color: white;
+            margin-bottom: 20px;
+            display: none;
+            text-align: center;
+
+        }
+
+        .alert.success {background-color: #4CAF50;}
+        .alert.error {background-color: #f44336;}
+
+        .closebtn {
+            margin-left: 15px;
+            color: white;
+            font-weight: bold;
+            float: right;
+            font-size: 30px;
+            line-height: 20px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .closebtn:hover {
+            color: black;
+        }
+        #modalVolver button {
+            margin: 5px 0;
+            display: block;
+            width: 100%;
+        }
